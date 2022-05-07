@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  color: rgb(56, 81, 133);
+}
+
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ----------------- */
+/* ----------------- */
+/* ----------------- */
+
+
+.instagram-wrapper {
+  max-width: 935px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  margin: 32px;
+}
+
+.instagram-phone {
+  background-image: url('./assets//instagram-cover-smartphone.png');
+  width: 440px;
+  height: 581.15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+ 
+  position: relative;
+}
+
+@media (max-width: 1080px) {
+  .instagram-phone {
+    display: none;
+  }
+}
+
+.instagram-phone img {
+  width: 235px;
+  height: 510px;
+  position: absolute;
+  top: 26px;
+  right: 56px;
+}
+
+
+.instagram-continue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.instagram-continue .group {
+  background-color: #fff;
+  border: 1px solid rgb(219,219,219);
+  padding: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  width: 100%;
+}
+
+@media (max-width: 440px) {
+  .instagram-continue .group {
+    background-color: transparent;
+    border: 1px solid transparent;
+  }
+
+  .group p, .group span {
+    text-align: center;
+  }
+}
+
+.group > img {
+  width: 70%;
+}
+
+.profile-photo  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-photo img {
+  border-radius: 50%;
+  width: 50%;
+}
+
+@media (max-width: 440px) {
+  .profile-photo img {
+    width: 39%;
+  }
+}
+
+.instagram-download {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.instagram-download p {
+  margin-bottom: 1rem;
+}
+.instagram-download .getApps {
+  display: flex;
+  gap: .5rem;
+}
+
+.getApps a img {
+  height: 40px;
+}
+
+
